@@ -5,26 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Water reminder</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/app.css">
 </head>
 
 <body>
     <div class="app">
-        <h1>Water reminder by Kilečko</h1>
+        <header>
+            <h1>Water reminder by Kilečko</h1>        
+        </header>
 
-        <label for="time-select">Kedy sa má zobraziť pripomienka?</label>
+        <main>
+            <label for="time-select">Kedy sa má zobraziť pripomienka?</label>
 
-        <select name="time" id="time-select">
-            <option value="15">O 15 minút</option>
-            <option value="30">O 30 minút</option>
-            <option value="45">O 45 minút</option>
-            <option value="60">O 1 hodinu</option>
-            <option value="75">O 1 hodinu 15 minút</option>
-            <option value="90">O 1 hodinu 30 minút</option>
-            <option value="105">O 1 hodinu 45 minút</option>
-            <option value="120">O 2 hodiny</option>
-        </select>
+            <select name="time" id="time-select">
+                <option value="15">O 15 minút</option>
+                <option value="30">O 30 minút</option>
+                <option value="45">O 45 minút</option>
+                <option value="60">O 1 hodinu</option>
+                <option value="75">O 1 hodinu 15 minút</option>
+                <option value="90">O 1 hodinu 30 minút</option>
+                <option value="105">O 1 hodinu 45 minút</option>
+                <option value="120">O 2 hodiny</option>
+            </select>
+
+            <button type="submit">Spustiť!</button>
+        </main>
+
+        <p>Dnes si vypil </p>
+        <p id="water-amount"></p>
+        <p> L vody.</p>
+
+
+        <div></div>
+
     </div>
     
 </body>

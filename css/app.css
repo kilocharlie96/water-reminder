@@ -14,18 +14,39 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
 }
 
 .app {
-    width: 52rem;
+    width: 20rem;
     height: 36rem;
 
     border: 2px solid black;
     border-radius: 0.75rem;
 
     background: #fff;
+
+    padding: 1.5rem;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+main {
+    margin: 2rem 0;
 }
 
 select {
     display: block;
+
+    margin: 0.75rem 0;
+}
+
+p {
+    display: inline;
 }
