@@ -1,0 +1,31 @@
+html {
+    font-size: 100%;
+}
+
+body {
+    background-image: linear-gradient(
+        to right,
+        oklch(0.8947 0.0604 227.77),
+        oklch(0.6029 0.1466 243.46)
+    );
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app {
+    width: 52rem;
+    height: 36rem;
+
+    border: 2px solid black;
+    border-radius: 0.75rem;
+
+    background: #fff;
+}
+
+select {
+    display: block;
+}
