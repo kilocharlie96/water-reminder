@@ -42,12 +42,12 @@ main {
     margin: 2rem 0;
 }
 
-label, select {
+label, select, button {
     display: block;
 
     margin: 0.75rem 0;
 }
 
-footer {
-
+input#consumed-water {
+    width: 20%;
 }

@@ -1,5 +1,6 @@
 <h2>Napil/a si sa? Super!</h2>
 
 <label for="consumed-water">Koľko vody si práve vypil/a?</label>
-<input type="number" name="consumed-water" id="consumed-water" required>
+<input type="number" name="consumed-water" id="consumed-water" required value="0.00" step="0.01" min="0">
+<span>L vody.</span>
 <button onclick="saveWater()">Uložiť údaje</button>

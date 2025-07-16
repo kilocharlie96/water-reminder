@@ -1,4 +1,4 @@
-    var waterConsumed = 0.0,
+    var waterConsumed = 0.00,
         elementWaterAmount = document.getElementById("water-amount");
     
     function saveWater() {
