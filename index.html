@@ -24,8 +24,8 @@
             <h1>Water reminder by Kilečko 🥤</h1>
         </header>
 
-        <main id="main">
-            <label for="time-select">Kedy sa má zobraziť pripomienka?</label>
+        <main id="main" hx-get="/landing-page.html" hx-trigger="load">
+            <!-- <label for="time-select">Kedy sa má zobraziť pripomienka?</label>
 
             <select name="time" id="time-select">
                 <option value="15">O 15 minút</option>
@@ -38,10 +38,10 @@
                 <option value="120">O 2 hodiny</option>
             </select>
 
-            <button hx-get="/counter.html" hx-target="main">Spustiť!</button>
+            <button hx-get="/counter.html" hx-target="main">Spustiť!</button> -->
         </main>
 
-        <p>Dnes si vypil 0L vody</p>
+        <p>Dnes si vypil <span id="water-amount">0</span> vody</p>
 
         <p>
             <small>Odporúčaná denná dávka je približne 2,5 litra vody. Ak chceš vedieť viac, klikni <a href="#">SEM</a>.</small>
