@@ -1,4 +1,4 @@
-var countDownDate = new Date("Jul 16, 2025 13:30:05").getTime();
+var countDownDate = new Date("Jul 16, 2025 13:30:05").getTime(); //todo tento čas treba nastaviť od používateľa
 
 var x = setInterval(function() {
 
@@ -24,3 +24,5 @@ var x = setInterval(function() {
   });
   }
 }, 1000);
+
+
