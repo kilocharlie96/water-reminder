@@ -19,7 +19,7 @@ var x = setInterval(function() {
   if (distance < 0) {
     clearInterval(x);
     alert("Napi sa vody!");
-    htmx.ajax('GET', '/notification.html', {
+    htmx.ajax('GET', 'notification.html', {
     target: '#main'
   });
   }
