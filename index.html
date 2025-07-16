@@ -8,7 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.6/dist/htmx.js" 
+            integrity="sha384-ksKjJrwjL5VxqAkAZAVOPXvMkwAykMaNYegdixAESVr+KqLkKE8XBDoZuwyWVUDv" 
+            crossorigin="anonymous">
+    </script>
+
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/app.css">
 </head>
@@ -19,7 +24,7 @@
             <h1>Water reminder by Kilečko</h1>        
         </header>
 
-        <main>
+        <main id="main">
             <label for="time-select">Kedy sa má zobraziť pripomienka?</label>
 
             <select name="time" id="time-select">
@@ -33,7 +38,7 @@
                 <option value="120">O 2 hodiny</option>
             </select>
 
-            <button type="submit">Spustiť!</button>
+            <button hx-get="/counter.html" hx-target="main">Spustiť!</button>
         </main>
 
         <p>Dnes si vypil </p>
