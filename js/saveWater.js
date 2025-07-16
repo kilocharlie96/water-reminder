@@ -6,7 +6,7 @@
         console.log("Vypitá voda:", waterConsumed, "ml");
         elementWaterAmount.innerHTML = waterConsumed;
 
-            htmx.ajax('GET', '/landing-page.html', {
+            htmx.ajax('GET', 'landing-page.html', {
             target: '#main'
         });
     }
