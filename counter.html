@@ -1,10 +1,10 @@
 <h2>Pripomienka sa spustí o ...</h2>
 
-<p id="demo"></p>
+<p id="counter"></p>
 
 <script>
 // Set the date we're counting down to
-var countDownDate = new Date("Jul 16, 2025 07:55:25").getTime();
+var countDownDate = new Date("Jul 16, 2025 13:30:05").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -20,16 +20,20 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
-  // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = hours + "h "
+  // Output the result in an element with id="counter"
+  document.getElementById("counter").innerHTML = hours + "h "
   + minutes + "m " + seconds + "s ";
     
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "Napi sa vody!"
+    // document.getElementById("counter").innerHTML = "<button onclick=\"alert('Napi sa vody!')\">Zobraziť alert</button>"
+    alert("Napi sa vody!");
+    // Po zatvorení alertu spustíme požiadavku HTMX
+    htmx.ajax('GET', '/notification.html', {
+    target: '#main'
+  });
   }
 }, 1000);
-</script>
 
-<button onclick="alert('Napi sa vody!')">Zobraziť alert</button>
+</script>

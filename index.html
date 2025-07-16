@@ -41,14 +41,21 @@
             <button hx-get="/counter.html" hx-target="main">Spustiť!</button>
         </main>
 
-        <p>Dnes si vypil </p>
-        <p id="water-amount"></p>
-        <p> L vody.</p>
+        <p>Dnes si vypil 0L vody</p>
 
+        <p>
+            <small>Odporúčaná denná dávka je približne 2,5 litra vody. Ak chceš vedieť viac, klikni <a href="#">SEM</a>.</small>
+        </p>
 
-        <div></div>
+        <footer>
+            <p>Created by <strong>Kilečko</strong>.</p>
+        </footer>
 
     </div>
+
+    <script>
+        var waterAmount = 0.0;
+    </script>
     
 </body>
 </html>

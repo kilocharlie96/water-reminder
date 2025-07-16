@@ -1,3 +1,12 @@
-<h2>Napi sa!</h2>
+<h2>Napil/a si sa? super!</h2>
 
-<p>Koľko vody si práve vypil?</p>
+<label for="consumed-water">Koľko vody si práve vypil/a?</label>
+<input type="number" name="consumed-water" id="consumed-water" required>
+<button onclick="saveWater()">Uložiť údaje</button>
+
+<script>
+    function saveWater() {
+        const consumedWater = Number(document.getElementById("consumed-water").value);
+        console.log("Vypitá voda:", consumedWater, "ml");
+    }
+  </script>

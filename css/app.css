@@ -41,12 +41,12 @@ main {
     margin: 2rem 0;
 }
 
-select {
+label, select {
     display: block;
 
     margin: 0.75rem 0;
 }
 
-p {
-    display: inline;
+footer {
+
 }
