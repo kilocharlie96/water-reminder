@@ -3,7 +3,6 @@ function startCounter() {
   var option = document.getElementById("time-select").value;
   var now = new Date();
   var alarmTime = new Date(now.getTime() + (option * 60 * 1000));
-  console.log(alarmTime);
 
 var x = setInterval(function() {
 
