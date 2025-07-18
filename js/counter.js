@@ -1,10 +1,14 @@
-var countDownDate = new Date("Jul 16, 2025 13:30:05").getTime(); //todo tento čas treba nastaviť od používateľa
+function startCounter() {
+
+  var option = document.getElementById("time-select").value;
+  var now = new Date();
+  var alarmTime = new Date(now.getTime() + (option * 60 * 1000));
+  console.log(alarmTime);
 
 var x = setInterval(function() {
 
-  var now = new Date().getTime();
-    
-  var distance = countDownDate - now;
+    var nowTime = new Date().getTime()
+        distance = alarmTime - nowTime;
     
 
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -25,4 +29,4 @@ var x = setInterval(function() {
   }
 }, 1000);
 
-
+}
