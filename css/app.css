@@ -34,6 +34,17 @@ body {
     margin: 1rem;
 }
 
+div.warning {
+    background: orange;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+div p {
+    margin: 0;
+}
+
 h1, h2, h3 {
     margin: 0;
 }
