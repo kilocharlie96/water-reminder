@@ -1,6 +1,6 @@
 # 💧 **Water Reminder – Simple, Fast, Reactive**
 
-  Water Reminder is a lightweight web application that reminds users to stay hydrated throughout the day. It is designed not only as a helpful tool, but also as a demonstration of how simple and effective frontend reactivity can be using HTMX — without the overhead of frameworks like React.
+  Water Reminder is a lightweight web application that reminds users to stay hydrated throughout the day. It is designed not only as a helpful tool, but also as a demonstration of how simple and effective frontend reactivity can be using HTMX — without the overhead of     frameworks like React.
 
 
 ### **</> Built with HTMX for Speed and Simplicity**
