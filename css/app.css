@@ -74,3 +74,14 @@ option {
 input#consumed-water {
     width: 20%;
 }
+
+a#link {
+    text-decoration: none;
+    font-weight: 500
+}
+
+a#link:hover, a#link:active {
+    /* text-shadow: 0.01rem 0.01rem 0.01rem black; */
+    font-weight: bold;
+    text-decoration: underline;
+}
