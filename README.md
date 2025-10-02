@@ -40,3 +40,6 @@ JavaScript is used only where truly needed — for example, to manage timers and
   🔗 [Water-reminder Live](https://kilocharlie96.github.io/water-reminder/)
   
   No dependencies, no build process — 100% client-side.
+
+### 👀 **Water-Reminder with Vue.js**
+  🔗 See also the [repository](https://github.com/kilocharlie96/water-reminder-vue) where I'm rewriting [Water-Reminder in Vue.js](https://github.com/kilocharlie96/water-reminder-vue) with more features.
